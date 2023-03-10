@@ -1,9 +1,27 @@
-const assertEqual = require('./assertEqual');
-const tail = require('./tail');
 
 
-let x = [1, 2, 3, 4];
-let i = 2;
-tail(x).forEach(a => {
-  assertEqual(a, i++);
-});
+
+// FUNCTION IMPLEMENTATION
+const assertEqual = function(actual, expected) {
+
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+
+    return true;
+
+  } else {
+    console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
+    return false;
+  }
+   
+};
+
+
+const tail = function(array) {
+  return array.slice(1);
+};
+
+// Test Case: Check the original array 
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words); // no need to capture the return value since we are not checking it
+assertEqual(words.length, 3); // original array should still have 3 elements!
