@@ -1,19 +1,28 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = require('./assertEqual');
+// const assertEqual = require('./assertEqual');
+// Commmenting out the above code because I'll need it later but not now. 
 
-  const eqArrays = function(arr1,arr2){
-    if (arr1.length !== arr2.length) {
-      return false;
-    }
+// EQ ARRAYS FUNCTION IMPLEMENTATION
 
-    for (let i =0; 1,arr1.length; i++) {
-      return false;
-    }
-  
-  return true;
-   
+
+const eqArrays = function(arr1,arr2){
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+   for (let i = 0; i <arr1.length; i++){
+
+     if (arr1[i] !== arr2[i])
+      return false
+   } 
+return true;
+ 
 };
 
-// TEST CODE
-console.log(eqArrays([1, 2, 3], [1, 2, 3]));
+// TESTING
+
+eqArrays([1, 2, 3], [1, 2, 3])x // => true
+eqArrays([1, 2, 3], [3, 2, 1]) // => false
+
+eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
 
