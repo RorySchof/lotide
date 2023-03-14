@@ -1,5 +1,11 @@
+// const assertEqual = require('./assertEqual'); 
+
+// THIS CODE ABOVE WAS ADDED FOR A LATER EXCERCISE. 
+// THAT'S WHY I'VE COMMMENTED IT OUT. 
 
 // FUNCTION IMPLEMENTATION
+
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -21,8 +27,5 @@ const head = function(array) {
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
-
-//module.exports = head;
-
 assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello")
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
