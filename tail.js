@@ -1,9 +1,13 @@
+const assertEqual = require('./assertEqual');
 
 
 
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
 
+
+/*  this section is commented out. Submit it and then delete and resubmit. 
+
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
 
@@ -15,6 +19,8 @@ const assertEqual = function(actual, expected) {
   }
    
 };
+
+*/
 
 
 const tail = function(array) {
