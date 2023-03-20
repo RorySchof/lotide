@@ -1,5 +1,5 @@
-
 // FUNCTION IMPLEMENTATION
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -17,20 +17,20 @@ const assertEqual = function(actual, expected) {
 
 const countOnly = function(allItems, itemsToCount) {
 
-  const result = {}
+  const result = {};
 
-  for (let i = 0; i < allItems.length; i++){
-    const item = allItems[i]
-    if (itemsToCount[item] === true){
-      if (result[item]){
-        result[item] +=1
+  for (let i = 0; i < allItems.length; i++) {
+    const item = allItems[i];
+    if (itemsToCount[item] === true) {
+      if (result[item]) {
+        result[item] += 1;
       } else {
-        result[item] = 1
+        result[item] = 1;
       }
     }
   }
-  return result
-}
+  return result;
+};
 
 const firstNames = [
   "Karl",

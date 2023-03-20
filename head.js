@@ -1,10 +1,8 @@
-// const assertEqual = require('./assertEqual'); 
-
-// THIS CODE ABOVE WAS ADDED FOR A LATER EXCERCISE. 
-// THAT'S WHY I'VE COMMMENTED IT OUT. 
+const assertEqual = require('./assertEqual');
 
 // FUNCTION IMPLEMENTATION
 
+/* Commented out as part of refactoring excercise.
 
 const assertEqual = function(actual, expected) {
 
@@ -17,8 +15,8 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
     return false;
   }
-   
 };
+*/
 
 const head = function(array) {
   return array[0];

@@ -6,7 +6,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 const results1 = map(words, word => word[0]);
 console.log(results1);
@@ -35,6 +35,5 @@ const eqArrays = function(arr1, arr2) {
       return false;
     }
   }
-
   return true;
 };

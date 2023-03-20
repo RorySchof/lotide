@@ -18,7 +18,7 @@ const assertEqual = function(actual, expected) {
 
 /*  Commented out and moved to another file
 
-assertEqual("Lighthouse Labs", "Bootcamp");
+console.log(assertEqual("Lighthouse Labs", "Bootcamp")"";
 assertEqual(1, 1);
 
 */

@@ -1,15 +1,4 @@
 const assertEqual = require('../assertEqual');
-
-
-/* this code is commented out for a later section . keep code. 
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-
-*/
-
-//Everything below is from the new section. 
-
 const assert = require('chai').assert;
 const head   = require('../head');
 

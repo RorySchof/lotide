@@ -14,22 +14,20 @@ const assertEqual = function(actual, expected) {
    
 };
 
-const variableName = "boo"
+const variableName = "boo";
 
-const countLetters = function(string){
- const obj = {}
+const countLetters = function(string) {
+  const obj = {};
 
-  for (let i = 0; i < string.length; i++){
-  if(!obj[string[i]]){
-    obj[string[i]] = 1
-  }  
+  for (let i = 0; i < string.length; i++) {
+    if (!obj[string[i]]){
+      obj[string[i]] = 1;}  
 
-  else {obj[string[i]]+=1
-  }
+  else {obj[string[i]]+= 1}}
+  console.log(obj);
+};
 
-} console.log(obj)
-}
-countLetters(variableName)
+countLetters(variableName);
 
 
 

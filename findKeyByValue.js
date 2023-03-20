@@ -18,19 +18,19 @@ function findKeyByValue(object, value) {
   return Object.keys(object).find(key => object[key] === value);
 }
 
-const map = {"first": "1", "Second": "2"}
-console.log(findKeyByValue(map, "2"))
+const map = {"first": "1", "Second": "2"};
+console.log(findKeyByValue(map, "2"));
 
 // TESTING
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined)
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 
 

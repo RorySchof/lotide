@@ -1,15 +1,18 @@
-function findKey (object, callback){
+//FIND KEY FUNCTION
+
+function findKey (object, callback) {
   let keys = Object.keys(object);
-  for (let i = 0; i < result.length; i++){
+  for (let i = 0; i < result.length; i++) {
     const key = keys[i];
-    if (callback(object[keys](object))){
+    if (callback(object[keys](object))) {
       return key;
     }
   }
-   return undefined;
+  return undefined;
 }
 
 // ASSERT EQUAL FUNCTION IMPLEMENTATION
+
 const assertEqual = function(actual, expected) {
 
   if (actual === expected) {
@@ -25,8 +28,8 @@ const assertEqual = function(actual, expected) {
 
 // TESTING
 
-assertEqual(2, 3)
-assertEqual(2, 2)
+assertEqual(2, 3);
+assertEqual(2, 2);
 
 
 
